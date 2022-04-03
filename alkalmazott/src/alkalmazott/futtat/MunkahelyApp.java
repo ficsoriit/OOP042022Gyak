@@ -16,5 +16,4 @@ public class MunkahelyApp {
 		
 		iroda.nyugdijElottLista(5);
 	}
-
 }
