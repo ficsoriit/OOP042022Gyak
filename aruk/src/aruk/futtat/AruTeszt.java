@@ -23,5 +23,4 @@ public class AruTeszt {
 		Kenyer kenyer3 = new Kenyer("aa", 200, 5, 0.5);
 		Kenyer.osszehassonlit((Kenyer)kenyer2, kenyer3);
 	}
-
 }
