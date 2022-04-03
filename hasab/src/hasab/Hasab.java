@@ -18,7 +18,7 @@ public abstract class Hasab {
 		return alapterulet() * magassag;
 	}
 	
-	public boolean nagyobbE(Henger masik) {
+	public boolean nagyobbE(Hasab masik) {
 		return terfogat() > masik.terfogat();
 	}
 }
