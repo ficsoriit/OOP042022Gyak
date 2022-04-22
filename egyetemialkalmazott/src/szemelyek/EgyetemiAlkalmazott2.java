@@ -1,10 +1,10 @@
 package szemelyek;
 
-public class EgyetemiAlkalmazott extends Alkalmazott implements Comparable<EgyetemiAlkalmazott> {
+public class EgyetemiAlkalmazott2 extends Alkalmazott {
 	private Beosztas beosztas;
 	private static final int alapber = 500000;
 	
-	public EgyetemiAlkalmazott(String nev, int kor, String munkahely, Beosztas beosztas) {
+	public EgyetemiAlkalmazott2(String nev, int kor, String munkahely, Beosztas beosztas) {
 		super(nev, kor, munkahely, alapber); // Itt a fizetes lehet barmi!!!
 		this.beosztas = beosztas;
 		switch (beosztas) {
@@ -15,6 +15,7 @@ public class EgyetemiAlkalmazott extends Alkalmazott implements Comparable<Egyet
 		case ADMIN : setFizetes((int)(alapber*0.3));
 		}
 	}
+
 	
 	public Beosztas getBeosztas() {
 		return beosztas;
@@ -27,11 +28,12 @@ public class EgyetemiAlkalmazott extends Alkalmazott implements Comparable<Egyet
 	}
 
 
+	/*	
+	Ez igy most hibas, mert nincs feluldefinialhato oroklott metodus!
 	@Override
-	public int compareTo(EgyetemiAlkalmazott o) {
+	public int compareTo(EgyetemiAlkalmazott2 o) {
 		// TODO Auto-generated method stub
 		return getFizetes() - o.getFizetes();
 	}
-
-
+	*/
 }
